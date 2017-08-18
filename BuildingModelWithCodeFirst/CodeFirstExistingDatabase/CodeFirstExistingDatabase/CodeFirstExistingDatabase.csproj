@@ -69,6 +69,10 @@
     <Compile Include="Migrations\201708180818440_AddCategoryColumnToCoursesTable.Designer.cs">
       <DependentUpon>201708180818440_AddCategoryColumnToCoursesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708181009290_AddDatePublishedColumnToCoursesTable.cs" />
+    <Compile Include="Migrations\201708181009290_AddDatePublishedColumnToCoursesTable.Designer.cs">
+      <DependentUpon>201708181009290_AddDatePublishedColumnToCoursesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
     <Compile Include="Program.cs" />
@@ -88,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708180818440_AddCategoryColumnToCoursesTable.resx">
       <DependentUpon>201708180818440_AddCategoryColumnToCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708181009290_AddDatePublishedColumnToCoursesTable.resx">
+      <DependentUpon>201708181009290_AddDatePublishedColumnToCoursesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
