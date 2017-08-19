@@ -7,13 +7,13 @@ namespace CodeFirstExistingDatabase.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class RenameTitleToNameInCoursesTable : IMigrationMetadata
+    public sealed partial class RenameTieleToNameInCoursesTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(RenameTitleToNameInCoursesTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(RenameTieleToNameInCoursesTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201708190013436_RenameTitleToNameInCoursesTable"; }
+            get { return "201708190030141_RenameTieleToNameInCoursesTable"; }
         }
         
         string IMigrationMetadata.Source
