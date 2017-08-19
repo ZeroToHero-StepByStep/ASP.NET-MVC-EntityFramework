@@ -7,26 +7,31 @@ namespace DataAnnotation
     using System.Data.Entity.Spatial;
 
     [Table("Courses")]
-    public partial class Cours
+    public partial class Course
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Cours()
+        public Course()
         {
             Tags = new HashSet<Tag>();
         }
 
         public int Id { get; set; }
 
+        [Required]
+        [MaxLength(2000)]
         public string Description { get; set; }
 
         public int Level { get; set; }
 
         public float FullPrice { get; set; }
 
-        public int? Author_Id { get; set; }
+        [ForeignKey("Author")]
+        public int AuthorId { get; set; }
 
         [Required]
+        [MaxLength(255)]
         public string Name { get; set; }
+
 
         public int? Category_Id { get; set; }
 
