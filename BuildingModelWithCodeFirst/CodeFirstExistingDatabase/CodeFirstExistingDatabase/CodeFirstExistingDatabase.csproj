@@ -88,6 +88,10 @@
     <Compile Include="Migrations\201708190050449_DeleteCategoriesTable.Designer.cs">
       <DependentUpon>201708190050449_DeleteCategoriesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708190528375_ChangeDescriptionToNotBeNullableInCoursesTable.cs" />
+    <Compile Include="Migrations\201708190528375_ChangeDescriptionToNotBeNullableInCoursesTable.Designer.cs">
+      <DependentUpon>201708190528375_ChangeDescriptionToNotBeNullableInCoursesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
     <Compile Include="Program.cs" />
@@ -122,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708190050449_DeleteCategoriesTable.resx">
       <DependentUpon>201708190050449_DeleteCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708190528375_ChangeDescriptionToNotBeNullableInCoursesTable.resx">
+      <DependentUpon>201708190528375_ChangeDescriptionToNotBeNullableInCoursesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
