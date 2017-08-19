@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace CodeFirstExistingDatabase.Migrations
 {
     using System;
@@ -14,18 +16,17 @@ namespace CodeFirstExistingDatabase.Migrations
 
         protected override void Seed(CodeFirstExistingDatabase.PlutoContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            context.Authors.AddOrUpdate(a => a.Name,
+                new Author()
+                {
+                    Name = "Author 1",
+                    Courses = new List<Course>()
+                    {
+                        new Course() {Name = "Course for Author 1 ", Description = "Decription 1"}
+                    }
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+                });
+
         }
     }
 }
