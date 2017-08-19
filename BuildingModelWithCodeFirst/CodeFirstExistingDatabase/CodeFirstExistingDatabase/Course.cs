@@ -15,7 +15,6 @@ namespace CodeFirstExistingDatabase
             Tags = new HashSet<Tag>();
         }
 
-        public DateTime? DatePublished { get; set; }
 
         public Category Category { get; set; }
 
