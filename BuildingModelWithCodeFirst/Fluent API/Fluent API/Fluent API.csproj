@@ -56,6 +56,7 @@
     <Compile Include="Category.cs" />
     <Compile Include="Course.cs" />
     <Compile Include="Cover.cs" />
+    <Compile Include="EntityConfigurations\CourseConfiguration.cs" />
     <Compile Include="Migrations\201708200353008_InitialModel.cs" />
     <Compile Include="Migrations\201708200353008_InitialModel.Designer.cs">
       <DependentUpon>201708200353008_InitialModel.cs</DependentUpon>
@@ -96,6 +97,7 @@
       <DependentUpon>201708200516248_ChangeForeignKeyNameInCourseTagsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
