@@ -68,6 +68,10 @@
     <Compile Include="Migrations\201708200508568_AddCoverToCoursesTable.Designer.cs">
       <DependentUpon>201708200508568_AddCoverToCoursesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708200516248_ChangeForeignKeyNameInCourseTagsTable.cs" />
+    <Compile Include="Migrations\201708200516248_ChangeForeignKeyNameInCourseTagsTable.Designer.cs">
+      <DependentUpon>201708200516248_ChangeForeignKeyNameInCourseTagsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
     <Compile Include="Program.cs" />
@@ -87,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708200508568_AddCoverToCoursesTable.resx">
       <DependentUpon>201708200508568_AddCoverToCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708200516248_ChangeForeignKeyNameInCourseTagsTable.resx">
+      <DependentUpon>201708200516248_ChangeForeignKeyNameInCourseTagsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
