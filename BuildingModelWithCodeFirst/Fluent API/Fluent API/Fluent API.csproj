@@ -55,6 +55,7 @@
     <Compile Include="Author.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Course.cs" />
+    <Compile Include="Cover.cs" />
     <Compile Include="Migrations\201708200353008_InitialModel.cs" />
     <Compile Include="Migrations\201708200353008_InitialModel.Designer.cs">
       <DependentUpon>201708200353008_InitialModel.cs</DependentUpon>
@@ -62,6 +63,10 @@
     <Compile Include="Migrations\201708200402003_RenameTagCoursesToCourseTagsTable.cs" />
     <Compile Include="Migrations\201708200402003_RenameTagCoursesToCourseTagsTable.Designer.cs">
       <DependentUpon>201708200402003_RenameTagCoursesToCourseTagsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708200508568_AddCoverToCoursesTable.cs" />
+    <Compile Include="Migrations\201708200508568_AddCoverToCoursesTable.Designer.cs">
+      <DependentUpon>201708200508568_AddCoverToCoursesTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
@@ -79,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708200402003_RenameTagCoursesToCourseTagsTable.resx">
       <DependentUpon>201708200402003_RenameTagCoursesToCourseTagsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708200508568_AddCoverToCoursesTable.resx">
+      <DependentUpon>201708200508568_AddCoverToCoursesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

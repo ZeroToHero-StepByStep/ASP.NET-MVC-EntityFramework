@@ -1,3 +1,5 @@
+using Fluent_API;
+
 namespace DataAnnotation
 {
     using System.Collections.Generic;
@@ -14,6 +16,10 @@ namespace DataAnnotation
         }
 
         public int Id { get; set; }
+
+
+        public int CoverId { get; set; }
+        public Cover Cover { get; set; }
 
       
         public string Description { get; set; }

@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using Fluent_API;
 
 namespace DataAnnotation
 {
@@ -18,6 +19,7 @@ namespace DataAnnotation
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Course> Courses { get; set; }
         public virtual DbSet<Tag> Tags { get; set; }
+        public DbSet<Cover> Covers { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -40,6 +42,12 @@ namespace DataAnnotation
                 .HasMany(c => c.Tags)
                 .WithMany(t => t.Courses)
                 .Map(m => m.ToTable("CourseTags"));
+
+
+            modelBuilder.Entity<Course>()
+                .HasRequired(c => c.Cover)
+                .WithRequiredPrincipal(c => c.Course);
+
 
 
         }
