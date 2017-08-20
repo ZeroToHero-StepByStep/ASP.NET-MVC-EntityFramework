@@ -59,6 +59,10 @@
     <Compile Include="Migrations\201708200353008_InitialModel.Designer.cs">
       <DependentUpon>201708200353008_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708200402003_RenameTagCoursesToCourseTagsTable.cs" />
+    <Compile Include="Migrations\201708200402003_RenameTagCoursesToCourseTagsTable.Designer.cs">
+      <DependentUpon>201708200402003_RenameTagCoursesToCourseTagsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
     <Compile Include="Program.cs" />
@@ -72,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201708200353008_InitialModel.resx">
       <DependentUpon>201708200353008_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708200402003_RenameTagCoursesToCourseTagsTable.resx">
+      <DependentUpon>201708200402003_RenameTagCoursesToCourseTagsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
